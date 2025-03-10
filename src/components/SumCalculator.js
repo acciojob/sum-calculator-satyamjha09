@@ -24,7 +24,7 @@ const SumCalculator = () => {
 
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
-      <h1>Sum Calculator</h1> {/* Changed from h2 to h1 */}
+      <h1>Sum Calculator</h1> 
       <input
         type="number"
         value={inputValue}
@@ -32,7 +32,7 @@ const SumCalculator = () => {
         placeholder="Enter a number"
       />
       <button onClick={handleAddNumber}>Add</button>
-      <p>Total Sum: {sum}</p> {/* Changed from h3 to p */}
+      <p>Sum: {sum}</p> 
     </div>
   );
   
