@@ -2,12 +2,15 @@ import React, { useState, useEffect } from "react";
 import "regenerator-runtime/runtime"; // Importing regenerator-runtime to fix async issues
 
 const SumCalculator = () => {
+
   const [numbers, setNumbers] = useState([]);
-  const [sum, setSum] = useState(3);
+  const [sum, setSum] = useState(0);
   const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
-    setSum(numbers.reduce((acc, num) => acc + num, 0));
+    const newSum = numbers.reduce((acc , num) => acc + num , 0);
+    setSum(newSum);
+    console.log(newSum)
   }, [numbers]);
 
   const handleInputChange = (e) => {
