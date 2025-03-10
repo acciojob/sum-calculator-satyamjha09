@@ -3,7 +3,7 @@ import "regenerator-runtime/runtime"; // Importing regenerator-runtime to fix as
 
 const SumCalculator = () => {
   const [numbers, setNumbers] = useState([]);
-  const [sum, setSum] = useState(0);
+  const [sum, setSum] = useState(3);
   const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
