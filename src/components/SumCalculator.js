@@ -24,7 +24,7 @@ const SumCalculator = () => {
 
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
-      <h1>Sum Calculator</h1> {/* Updated from h2 to h1 */}
+      <h2>Sum Calculator</h2>
       <input
         type="number"
         value={inputValue}
@@ -32,7 +32,7 @@ const SumCalculator = () => {
         placeholder="Enter a number"
       />
       <button onClick={handleAddNumber}>Add</button>
-      <p data-testid="total-sum">Total Sum: {sum}</p> {/* Added p tag for Cypress test */}
+      <h3>Sum: {sum}</h3> {/* Updated to match test expectation */}
     </div>
   );
 };
